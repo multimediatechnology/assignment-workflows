@@ -7,3 +7,6 @@
 # deps
 node_modules/
 
+# build
+dist/
+
