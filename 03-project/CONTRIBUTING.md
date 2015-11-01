@@ -12,24 +12,24 @@ etter than it is today! Here are the guidelines we'd like you to follow:
 
 ## <a name="coc"></a> Code of Conduct
 Help us keep this project open and inclusive. Please read and follow our
-[Code of Conduct][docs/coc.md].
+[Code of Conduct](docs/coc.md).
 
 ## <a name="issue"></a> Found an Issue?
 If you find a bug in the source code or a mistake in the documentation, you can
-help us by submitting an issue to our [GitHub Repository][github]. Even better
-you can submit a Pull Request with a fix.
+help us by submitting an issue to our [GitHub Repository](https://github.com/multimediatechnology/assignment-workflows).
+Even better you can submit a Pull Request with a fix.
 
 ## <a name="feature"></a> Want a Feature?
 You can request a new feature by submitting an issue to our
-[GitHub Repository][github].  If you would like to implement a new feature then
-consider what kind of change it is:
+[GitHub Repository](https://github.com/multimediatechnology/assignment-workflows).
+If you would like to implement a new feature then consider what kind of change it is:
 
 * **Major Changes** that you wish to contribute to the project should be
   discussed first so that we can better coordinate our efforts, prevent
   duplication of work, and help you to craft the change so that it is successfully
   accepted into the project.
 * **Small Changes** can be crafted and submitted to the
-  [GitHub Repository][github] as a Pull Request.
+  [GitHub Repository](https://github.com/multimediatechnology/assignment-workflows) as a Pull Request.
 
 ## <a name="docs"></a> Want a Doc Fix?
 If you want to help improve the docs, it's a good idea to let others know what
@@ -70,8 +70,8 @@ information will increase the chances of your issue being dealt with quickly:
 * **Project Version(s)** - is it a regression?
 * **Browsers and Operating System** - is this a problem with all browsers or
   only IE8?
-* **Reproduce the Error** - provide a live example (using [Plunker][plunker] or
-  [JSFiddle][jsfiddle]) or a unambiguous set of steps.
+* **Reproduce the Error** - provide a live example (using [Plunker](http://plnkr.co/) or
+  [JSFiddle](https://jsfiddle.net/)) or a unambiguous set of steps.
 * **Related Issues** - has a similar issue been reported before?
 * **Suggest a Fix** - if you can't fix the bug yourself, perhaps you can point
   to what might be causing the problem (line of code or commit)
@@ -87,8 +87,6 @@ Before you submit your pull request consider the following guidelines:
 * Search [GitHub](https://github.com/multimediatechnology/workflows-assignment/pulls)
   for an open or closed Pull Request that relates to your submission. You don't
   want to duplicate effort.
-* Please sign our [Contributor License Agreement (CLA)](#cla) before sending pull
-  requests. We cannot accept code without this.
 * Make your changes in a new git branch:
 
      ```shell
@@ -97,8 +95,7 @@ Before you submit your pull request consider the following guidelines:
 
 * Create your patch, **including appropriate test cases**.
 * Follow our [Coding Rules](#rules).
-* Run the full test suite, as described in the
-  [developer documentation][dev-doc], and ensure that all tests pass.
+* Run the full test suite
 * Commit your changes using a descriptive commit message that follows our
   [commit message conventions](#commit-message-format) and passes our commit
   message presubmit hook `validate-commit-msg.js`. Adherence to the
@@ -171,10 +168,10 @@ the changes from the main (upstream) repository:
 To ensure consistency throughout the source code, keep these rules in mind as
 you are working:
 
-* All features or bug fixes **must be tested** by one or more [specs][unit-testing].
+* All features or bug fixes **must be tested**.
 * All public API methods **must be documented** with JSDoc.
 * With the exceptions listed below, we follow the rules contained in
-  [Google's JavaScript Style Guide][js-style-guide]:
+  [Google's JavaScript Style Guide](https://google.github.io/styleguide/javascriptguide.xml):
     * **Do not use namespaces**: Instead,  wrap the entire code base in
       an anonymous closure and export our API explicitly rather than implicitly.
     * Wrap all code at **100 characters**.
