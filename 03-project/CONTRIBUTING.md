@@ -1,7 +1,7 @@
 # Contributing to this project
 
 We'd love for you to contribute to our source code and to make this project even
-etter than it is today! Here are the guidelines we'd like you to follow:
+better than it is today! Here are the guidelines we'd like you to follow:
 
  - [Code of Conduct](#coc)
  - [Issues and Bugs](#issue)
