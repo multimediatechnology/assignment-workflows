@@ -77,7 +77,7 @@ information will increase the chances of your issue being dealt with quickly:
   to what might be causing the problem (line of code or commit)
 
 Here is a great example of a well defined issue:
-https://github.com/multimediatechnology/workflows-assignment/issues/5069
+https://github.com/angular/angular.js/issues/5069
 
 **If you get help, help others. Good karma rulez!**
 
