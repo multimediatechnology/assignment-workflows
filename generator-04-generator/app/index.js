@@ -7,6 +7,9 @@ module.exports = generators.Base.extend({
   constructor: function() {
     generators.Base.apply(this, arguments)
   },
+  initializing() {
+    // this.destinationRoot('tmp')
+  },
   prompting() {
     const done = this.async()
     this.prompt(promptConfig, function(userConfig) {
@@ -16,8 +19,6 @@ module.exports = generators.Base.extend({
     }.bind(this))
   },
   writing() {
-    this.destinationRoot('tmp')
-
     this.fs.copyTpl(
       this.templatePath('_package.json'),
       this.destinationPath('package.json'),
