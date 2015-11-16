@@ -67,6 +67,11 @@ module.exports = generators.Base.extend({
     )
 
     this.fs.copy(
+      this.templatePath('icons/*'),
+      this.destinationPath('app/icons/')
+    )
+
+    this.fs.copy(
       this.templatePath('images/*'),
       this.destinationPath('app/images/')
     )

@@ -1,3 +1,3 @@
-/**
- * Created by hannesmoser on 16.11.15.
- */
+import $ from 'jquery'
+
+$('h1').html('Hello, World!')

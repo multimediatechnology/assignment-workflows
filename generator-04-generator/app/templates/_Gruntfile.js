@@ -55,7 +55,7 @@ module.exports = function(grunt) {
             options.base.forEach(function(base) {
               middlewares.push(serveStatic(base))
             })
-            //middlewares.push(serveStatic(directory))
+            middlewares.push(serveStatic(directory))
             middlewares.push(function(req, res) {
               for (let file, i = 0; i < options.base.length; i++) {
                 file = options.base + "/index.html"
@@ -97,8 +97,14 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: '<%= config.app %>',
+            src: ['icons/**/*'],
+            dest: '<%= config.dist %>'
+          },
+          {
+            expand: true,
+            cwd: '<%= config.app %>',
             src: ['images/**/*{.png,.gif,.jpg}'],
-            dest: '<%= config.dist %>/images'
+            dest: '<%= config.dist %>'
           }
         ]
       }
@@ -111,13 +117,18 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         options: {
-          rootpath: '.',
-          paths: ['<%= config.app %>'],
-          compress: true
+          style: 'compressed',
+          unixNewlines: true
         },
-        files: {
-          '<%= config.dist %>/styles/app.css': '<%= config.app %>/styles/app.scss'
-        }
+        files: [
+          {
+            expand: true,
+            cwd: '<%= config.app %>/styles',
+            src: ['*.scss'],
+            dest: '<%= config.dist %>/styles/',
+            ext: '.css'
+          }
+        ]
       }
     },
 
@@ -127,6 +138,10 @@ module.exports = function(grunt) {
       },
       documents: {
         files: ['<%= config.app %>/**/*.html'],
+        tasks: ['copy']
+      },
+      icons: {
+        files: ['<%= config.app %>/icons/**/*'],
         tasks: ['copy']
       },
       images: {
