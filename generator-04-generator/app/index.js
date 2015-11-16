@@ -15,7 +15,7 @@ module.exports = generators.Base.extend({
       done()
     }.bind(this))
   },
-  create() {
+  writing() {
     this.destinationRoot('tmp')
 
     this.fs.copyTpl(
@@ -76,7 +76,7 @@ module.exports = generators.Base.extend({
       this.destinationPath('app/images/')
     )
   },
-  initialize() {
+  install() {
     this.npmInstall()
   }
 })
