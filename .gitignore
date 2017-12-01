@@ -3,13 +3,3 @@
 
 # IDE
 .idea/
-
-# deps
-node_modules/
-
-# app
-.yo-rc.json
-tmp/
-
-# build
-dist/

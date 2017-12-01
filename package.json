@@ -1,9 +1,0 @@
-{
-  "name": "assignments-workflows",
-  "version": "1.0.0",
-  "description": "",
-  "main": "01-git/index.html",
-  "scripts": {},
-  "author": "Hannes Moser <hannes.moser@fh-salzburg.ac.at>",
-  "license": "MIT"
-}
